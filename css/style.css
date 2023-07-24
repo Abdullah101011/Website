@@ -1,0 +1,555 @@
+/******************* Start global rules  *******************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --pc: #ff274b;
+    --sc: #f7bcf7;
+    --lc: #ffff;
+    --bgc-1: #171a1c;
+    --bgc-2: #22282a;
+    --padding: 8%;
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lc);
+}
+
+span{
+    color: var(--pc);
+}
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+h4{
+    font-size: 1.25rem;
+    letter-spacing: .12rem;
+    color: var(--sc);
+    line-height: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/******************* End global rules  *******************/
+
+
+
+/******************* Start Home *******************/
+
+/* Start header */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgc-1);
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    padding: 1.5rem var(--padding) 1.2rem var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a{
+    color: var(--lc);
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: var(--pc);
+}
+
+.btn{
+    color: var(--lc);
+    background-color: var(--pc);
+    border-radius: 30px;
+    padding: 0.81rem 1.87rem;
+    font-weight: bold;
+    transition: 0.4s;
+    border: solid transparent 2px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: solid var(--pc) 2px;
+    transform: translate(5px);
+
+}
+/* End header */
+
+/* Start texts */
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contener-text{
+    position: relative;
+    bottom: 70px;
+}
+
+.contener-text .btn-2{
+    margin: 2rem 0;
+    display: inline-block;
+
+}
+
+.socail a{
+    margin: 2rem 1rem 0 0;
+}
+
+.socail a img{
+    width: 50px;
+    transition: 0.4s;
+}
+
+.socail a:hover img{
+    transform: scale(1.2);
+}
+/* End texts */
+
+/* Start photo */
+
+.contener-photos{
+    width: 60%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.contener-photos img{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.man{
+    transition: .5s;
+}
+
+.shape{
+    transition: 1.5s;
+}
+
+.contener-photos:hover .shape{
+    transform: scale(0.9);
+}
+
+.contener-photos:hover .man{
+    transform: scale(1.1);
+}
+
+/* End photo */
+
+/******************* End Home  *******************/
+
+
+
+
+/******************* Start About_Me  *******************/
+
+.About_Me{
+    background-color: var(--bgc-2);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About_Me .text{
+    width: 35%;
+}
+
+.About_Me .photo{
+    width: 35%;
+}
+
+.About_Me .photo img{
+    width: 90%;
+}
+
+/******************* End About_Me  *******************/
+
+
+
+/******************* Start Services  *******************/
+
+.Services{
+    background-color: var(--bgc-1);
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Services .cards{
+    display: flex;
+}
+
+.Services .cards .card{
+    background-color: var(--bgc-2);
+    text-align: center;
+    margin: 2rem;
+    padding: 2.2rem 1rem;
+    border-radius: 50px;
+    width: 25%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.Services .cards .card.card:hover{
+    box-shadow: 0px 0px 20px #ff274b26;
+    transform: scale(1.2);
+}
+
+.Services .cards .card i{
+    color: var(--pc);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.Services .cards .card h3{
+    margin-bottom: 20px;
+}
+
+.Services .cards .card h4{
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+/******************* End Services  *******************/
+
+
+
+/******************* Start Skills  *******************/
+
+.Skills{
+    background-color: var(--bgc-2);
+    padding: var(--padding);
+}
+
+.contaner{
+    display: flex;
+
+}
+
+.contaner .photo{
+    width: 35%;
+}
+
+.contaner .photo img{
+    width: 100%;
+}
+
+.contaner .icons{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contaner .icons div{
+    border-radius: 50%;
+    background-color: var(--lc);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    transition: .4s;
+}
+
+.contaner .icons div:hover{
+    background-color: transparent;
+    border: solid var(--lc ) 2px;
+    transform: scale(1.2);
+}
+
+.contaner .icons img{
+    width: 60px;
+    height: 60px;
+}
+
+/******************* End Skills  *******************/
+
+
+
+/******************* Start Contact  *******************/
+
+.Contact{
+    background-color: var(--bgc-1);
+    padding: 3% var(--padding);
+    text-align: center;
+}
+
+.Contact h4{
+    color: var(--lc);
+    line-height: 25px;
+    font-size: small;
+    letter-spacing: normal;
+}
+
+.Contact a{
+    color: var(--pc);
+}
+
+
+/******************* End Contact  *******************/
+
+
+/******************* Start Media  *******************/
+
+@media(max-width:575px){
+    :root{
+        --padding: 6%;
+    }
+    
+    html{
+        font-size: 7px;
+    }
+
+    .content{
+        padding: 0 var(--padding);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    .contener-text{
+        margin-top: 200px;
+        flex-grow: 2;
+    }
+
+    
+    .contener-photos{
+        width: 100%;
+        height: 40%;
+        display: block ;
+        position: relative ;
+        align-self: auto;
+        overflow: visible ;
+
+    }
+    
+    .contener-photos img{
+        position: absolute ;
+        height: 100%;
+        right: calc(50% - calc(169.185px - 2%));
+    }
+    
+    .man{
+        transition: 0s;
+    }
+    
+    .shape{
+        transition: 0s;
+    }
+    
+    .contener-photos:hover .shape{
+        transform: scale(1);
+    }
+    
+    .contener-photos:hover .man{
+        transform: scale(1);
+    }
+
+
+
+
+
+
+
+
+    nav .btn{
+        display: none;
+    }
+
+    .home{
+        position: relative;
+    }
+
+    nav ul{
+        position: absolute;
+        background-color: var(--bgc-2);
+        margin: 0;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 9999;
+        font-size: 30px;
+        visibility: hidden;
+    }
+
+    nav ul li a{
+        transition: 0s;
+    }
+
+    .dash{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 26px;
+        right: 15px;
+        background-color: transparent;
+    }
+
+    .dash:hover + ul {
+        visibility: visible;
+    }
+    .dash span{
+        width: 100%;
+        height: 20%;
+        background-color: var(--lc);
+    }
+
+    nav h2{
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .content{
+        justify-content: center;
+    }
+
+    .contener-text {
+        text-align: center;
+    }
+
+    .contener-text .btn-2{
+        font-size: 2rem;
+    }
+
+    .contener-text h4{
+        font-size: 13px;
+    }
+
+    .socail a img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+
+
+
+
+    .About_Me{
+        flex-direction: column;
+    }
+    
+    .About_Me .text{
+        width: 100%;
+    }
+    
+    .About_Me .photo{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+
+
+
+    
+    .Services .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .Services .cards .card{
+        border-radius: 20px;
+        width: 30%;
+    }
+    
+    .Services .cards .card h4{
+        line-height: 10px;
+    }
+
+
+
+
+
+    .Skills h1{
+        text-align: center;
+    }
+    
+    .contaner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contaner .photo{
+        width: 90%;
+    }
+    
+    .contaner .photo img{
+        width: 100%;
+    }
+    
+    .contaner .icons{
+        width: 90%;
+        justify-content: center;
+    }
+    
+    .contaner .icons div{
+        border-radius: 50%;
+        margin: 25px;
+    }
+
+    
+
+}
+/******************* End Media  *******************/
